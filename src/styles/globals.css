@@ -13,4 +13,40 @@ a {
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.f24 {
+  font-size: 24px;
+}
+.f40 {
+  font-size: 40px;
+}
+
+.f16 {
+  font-size: 16px;
+}
+
+.f20 {
+  font-size: 20px;
+}
+ul {
+  list-style-type: none;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.ct {
+  text-align: center;
 }
