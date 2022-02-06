@@ -20,6 +20,7 @@ export default function index() {
 
   useEffect(() => {
     // router.push("road-to-crown?tab=" + activeTab, undefined, { shallow: true });
+
     setActiveTab(router.query.tab || 0);
   }, [activeTab, router]);
   return (
