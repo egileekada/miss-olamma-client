@@ -36,7 +36,7 @@ export const Contestants = () => {
           >
             <div style={{}}>
               <img
-                src={contestant.avatar}
+                src={contestant.avatar || "/images/logo.svg"}
                 alt={`image of ${contestant.firstName}`}
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
               />

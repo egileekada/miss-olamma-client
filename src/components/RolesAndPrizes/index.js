@@ -77,7 +77,7 @@ export const RolesAndPrizes = () => {
           The following terms and conditions will guide the contest of Miss
           Olamma Africa Pageant. Your application and enrollment to this contest
           signifies that you have read the terms and conditions and therefore
-          submit yourself to it's provisions.
+          submit yourself to it is provisions.
         </p>
         <ul>
           {terms.map((item, idx) => (
