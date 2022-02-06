@@ -4,7 +4,6 @@ import baseURL from "../../configs/baseURL";
 export const getData = async (path) => {
   try {
     const { data } = await axios.get(baseURL + path);
-    console.log(data);
 
     return data;
   } catch (error) {
