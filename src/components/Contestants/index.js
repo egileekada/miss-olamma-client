@@ -23,7 +23,7 @@ export const Contestants = () => {
       //   backgroundColor: "red",
       // }}
     >
-      <ul style={{ padding: 20 }}>
+      <ul style={{ padding: "20px 62px" }}>
         {contestants.map((contestant, idx) => (
           <li
             key={idx}

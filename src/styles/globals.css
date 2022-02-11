@@ -53,3 +53,7 @@ ul {
 .f700 {
   font-weight: 700;
 }
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
