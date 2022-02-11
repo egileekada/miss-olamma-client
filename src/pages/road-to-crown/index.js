@@ -1,7 +1,13 @@
 import { useEffect, useState } from "react";
-import { Contestants, RolesAndPrizes } from "../../components";
+import {
+  Contestants,
+  PageHeader,
+  RolesAndPrizes,
+  TopContestants,
+} from "../../components";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import io from "socket.io-client";
 
 export default function RoadToCrown() {
   const router = useRouter();
@@ -15,11 +21,17 @@ export default function RoadToCrown() {
   } else if (activeTab * 1 === 1) {
     content = <RolesAndPrizes />;
   } else {
-    content = <div />;
+    content = <TopContestants />;
   }
 
   useEffect(() => {
     // router.push("road-to-crown?tab=" + activeTab, undefined, { shallow: true });
+    const socket = io("https://custom-echat.herokuapp.com");
+    console.log(socket);
+    socket.on("users", (data) => {
+      console.log(data);
+      socket.emit("con", "i'm connected");
+    });
     setActiveTab(router.query.tab || 0);
   }, [activeTab, router]);
   return (
@@ -30,24 +42,7 @@ export default function RoadToCrown() {
           margin: "66px 30px",
         }}
       >
-        <h1
-          className="f40 ct"
-          style={{
-            color: "rgba(14, 14, 14, 0.9)",
-            marginBottom: 20,
-            fontWeight: "400",
-            fontFamily: "Minion Pro",
-          }}
-        >
-          Contest of Champions (CoC)
-        </h1>
-        <div
-          style={{
-            width: 90,
-            height: 4,
-            backgroundColor: "rgba(188, 137, 36, 1)",
-          }}
-        />
+        <PageHeader title="Contest of Champions (CoC)" />
         <nav style={{ marginTop: 60 }}>
           <ul>
             {["Contestants", "Rules & Prices", "Top Contestants"].map(
