@@ -57,3 +57,7 @@ ul {
 .flex-wrap {
   flex-wrap: wrap;
 }
+
+.hero-image {
+  background-image: url("/images/hero.svg");
+}
