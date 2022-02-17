@@ -114,8 +114,8 @@ export default function Home() {
               { img: "instagram.svg" },
               { img: "twitter.svg" },
               { img: "youtube.svg" },
-            ].map((link) => (
-              <li>
+            ].map((link, idx) => (
+              <li key={idx}>
                 <a href="">
                   <img src={"./images/" + link.img} />
                 </a>
@@ -133,8 +133,8 @@ export default function Home() {
             },
             { menu: "Privacy poilicy" },
             { menu: "How voting works" },
-          ].map((menu) => (
-            <li>
+          ].map((menu, idx) => (
+            <li key={idx}>
               <Link href="/">
                 <a
                   style={{
