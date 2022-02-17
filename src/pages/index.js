@@ -1,6 +1,13 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Button } from "../components";
+import Link from "next/link";
+import {
+  Button,
+  CompanySection,
+  ComplainsSection,
+  GallerySection,
+} from "../components";
+
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -94,123 +101,72 @@ export default function Home() {
       </header>
 
       <main>
-        <section
-          style={{
-            padding: "53px 30px",
-            backgroundColor: "rgba(5, 7, 5, 0.8)",
-          }}
-        >
-          <div style={{ marginBottom: 105 }}>
-            <h2
-              style={{
-                textAlign: "center",
-                color: "rgba(255, 255, 255, 1)",
-                fontSize: 22,
-                fontWeight: "700",
-                fontFamily: "Circular Std",
-              }}
-            >
-              About us
-            </h2>
-            <p
-              style={{
-                lineHeight: 1.4,
-                color: "rgba(238, 238, 238, 1)",
-                fontFamily: 14,
-              }}
-            >
-              Miss Olamma Africa is not only a celebration of the beauty of
-              Africa from the eyes of the Igbo women of South East Nigeria, it
-              is the acknowledgement of the most virtuous, most valuable, the
-              most precious gift of all that the universe has bestowed upon
-              humanity, THE WOMAN.
-            </p>
-          </div>
-          <div style={{ marginBottom: 30 }}>
-            <h2
-              style={{
-                color: "rgba(255, 255, 255, 0.9)",
-                fontSize: 20,
-                fontWeight: "500",
-                fontFamily: "Circular Std",
-                marginBottom: 17.3,
-              }}
-            >
-              Our vision
-            </h2>
-            <p
-              style={{
-                lineHeight: 1.4,
-                color: "rgba(226, 226, 226, 0.9)",
-                fontFamily: 16,
-              }}
-            >
-              We are determined to create a pan African platform that celebrates
-              the African beauty through the eyes of the Igbo Woman.
-            </p>
-          </div>
-          <div style={{ marginTop: 30 }}>
-            <h2
-              style={{
-                color: "rgba(255, 255, 255, 0.9)",
-                fontSize: 20,
-                fontWeight: "500",
-                fontFamily: "Circular Std",
-                marginBottom: 17.3,
-              }}
-            >
-              Our mission
-            </h2>
-            <p
-              style={{
-                lineHeight: 1.4,
-                color: "rgba(226, 226, 226, 0.9)",
-                fontFamily: 16,
-              }}
-            >
-              To design an annual contest that allows Igbo African Women to
-              express themselves through pageantry.
-            </p>
-          </div>
-          <div style={{ marginTop: 30 }}>
-            <h2
-              style={{
-                color: "rgba(255, 255, 255, 0.9)",
-                fontSize: 20,
-                fontWeight: "500",
-                fontFamily: "Circular Std",
-                marginBottom: 17.3,
-              }}
-            >
-              The Contest
-            </h2>
-            <p
-              style={{
-                lineHeight: 1.4,
-                color: "rgba(226, 226, 226, 0.9)",
-                fontFamily: 16,
-              }}
-            >
-              Miss Olamma Africa Pageant is an online voting contest that
-              culminates into a grand finale amidst a high-quality audience, the
-              media and stakeholders across Nigeria
-            </p>
-          </div>
-        </section>
+        <CompanySection />
+        <GallerySection />
+        <ComplainsSection />
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+      <footer style={{ backgroundColor: "rgba(0, 0, 0, 0.8)", paddingTop: 61 }}>
+        <section role="links" className="flex justify-center">
+          <ul className="flex" style={{ columnGap: 16 }}>
+            {[
+              { img: "facebook.svg" },
+              { img: "instagram.svg" },
+              { img: "twitter.svg" },
+              { img: "youtube.svg" },
+            ].map((link) => (
+              <li>
+                <a href="">
+                  <img src={"./images/" + link.img} />
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+        <ul
+          className="flex align-center flex-col"
+          style={{ marginTop: 50, marginBottom: 42 }}
         >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
+          {[
+            {
+              menu: "Terms of use",
+            },
+            { menu: "Privacy poilicy" },
+            { menu: "How voting works" },
+          ].map((menu) => (
+            <li>
+              <Link href="/">
+                <a
+                  style={{
+                    color: "rgba(188, 137, 36, 1)",
+                    fontSize: 14,
+                    fontFamily: "Circular Std",
+                    padding: 10,
+                    display: "inline-block",
+                  }}
+                >
+                  {menu.menu}
+                </a>
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <div>
+          <p
+            style={{
+              color: "rgba(255, 255, 255, 1)",
+              fontSize: 12,
+              lineHeight: 1.6,
+              textAlign: "center",
+              padding: "0 50px 38px 50px",
+            }}
+          >
+            Copyright 2022 Miss Olamma africa beauty Pageant. All rights
+            reserved.
+          </p>
+        </div>
       </footer>
+      {/* <div style={{ height: 300 }}></div> */}
     </div>
   );
 }

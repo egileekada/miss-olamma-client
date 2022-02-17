@@ -3,3 +3,7 @@ export * from "./RolesAndPrizes";
 export * from "./TopContestants";
 export * from "./PageHeader";
 export * from "./Button";
+export * from "./CompanySection";
+export * from "./ComplainsSection";
+export * from "./GallerySection";
+export * from "./Input";

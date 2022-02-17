@@ -1,6 +1,11 @@
 import React from "react";
 
-export const Button = function ({ bg }) {
+export const Button = function ({
+  bg,
+  title = "Login",
+  fg = "rgba(255, 255, 255, 1)",
+  style,
+}) {
   return (
     <button
       style={{
@@ -8,10 +13,12 @@ export const Button = function ({ bg }) {
         backgroundColor: bg,
         borderRadius: 5,
         border: "1px solid rgba(188, 137, 36, 0.2)",
-        color: "rgba(255, 255, 255, 1)",
+        color: fg,
+        ...style,
+        fontFamily: "Circular Std",
       }}
     >
-      Login
+      {title}
     </button>
   );
 };

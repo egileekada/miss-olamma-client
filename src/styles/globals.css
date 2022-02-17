@@ -42,6 +42,9 @@ ul {
 .align-center {
   align-items: center;
 }
+.justify-center {
+  justify-content: center;
+}
 
 .flex {
   display: flex;
@@ -60,4 +63,8 @@ ul {
 
 .hero-image {
   background-image: url("/images/hero.svg");
+}
+
+input {
+  outline: none;
 }
