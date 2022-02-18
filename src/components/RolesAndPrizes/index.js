@@ -37,8 +37,11 @@ export const RolesAndPrizes = () => {
   ];
 
   return (
-    <div style={{ padding: "0 30px" }}>
+    <div style={{ padding: "0 30px", backgroundColor: "rgba(5, 7, 5, 0.8)" }}>
       <section style={{ marginBottom: 40 }}>
+        <h2 className="f24 f700" style={{ color: "#fff", marginBottom: 25 }}>
+          PRIZES
+        </h2>
         <ul>
           {prizes.map((sec, idx) => (
             <li key={idx} style={{ marginBottom: 20 }}>
@@ -46,13 +49,19 @@ export const RolesAndPrizes = () => {
                 style={{
                   fontFamily: "Typo Grotesk Regular",
                   marginBottom: 15,
-                  color: "rgba(14, 14, 14, 0.78)",
+                  color: "rgba(188, 137, 36, 1)",
                 }}
                 className="f20 f700"
               >
                 {sec.title}
               </h2>
-              <p className="f20" style={{ fontFamily: "Minion Pro Regular" }}>
+              <p
+                className="f20"
+                style={{
+                  fontFamily: "Minion Pro Regular",
+                  color: "rgba(238, 238, 238, 1)",
+                }}
+              >
                 {sec.content}
               </p>
             </li>
@@ -64,7 +73,7 @@ export const RolesAndPrizes = () => {
           style={{
             fontFamily: "Typo Grotesk Regular",
             marginBottom: 15,
-            color: "rgba(14, 14, 14, 0.78)",
+            color: "rgba(255, 255, 255, 0.9)",
           }}
           className="f20 f700"
         >
@@ -72,7 +81,11 @@ export const RolesAndPrizes = () => {
         </h2>
         <p
           className="f16"
-          style={{ fontFamily: "Minion Pro Regular", marginBottom: 20 }}
+          style={{
+            fontFamily: "Minion Pro Regular",
+            marginBottom: 20,
+            color: "rgba(255, 255, 255, 0.9)",
+          }}
         >
           The following terms and conditions will guide the contest of Miss
           Olamma Africa Pageant. Your application and enrollment to this contest
@@ -84,9 +97,11 @@ export const RolesAndPrizes = () => {
             <li
               key={idx}
               style={{
-                marginBottom: 16,
+                marginBottom: idx === terms.length - 1 ? 0 : 16,
                 fontFamily: "Minion Pro",
                 lineHeight: "19.5px",
+                color: "rgba(238, 238, 238, 1)",
+                fontSize: 14,
               }}
               className="f20"
             >

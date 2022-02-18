@@ -62,9 +62,24 @@ ul {
 }
 
 .hero-image {
-  background-image: url("/images/hero.svg");
+  background-image: url("../../public/images/hero.svg");
+}
+.overlay {
+  background-image: radial-gradient(
+    79.24% 270.81% at 35.45% 34.74%,
+    rgba(5, 7, 5, 0.8) 0%,
+    rgba(5, 7, 5, 0.712) 100%
+  );
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  top: 0;
 }
 
 input {
   outline: none;
+}
+
+.pointer {
+  cursor: pointer;
 }

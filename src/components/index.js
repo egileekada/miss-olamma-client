@@ -7,3 +7,6 @@ export * from "./CompanySection";
 export * from "./ComplainsSection";
 export * from "./GallerySection";
 export * from "./Input";
+export * from "./Footer";
+export * from "./Header";
+export * from "./ContestAndContestant";
