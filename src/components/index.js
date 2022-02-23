@@ -13,3 +13,5 @@ export * from "./ContestAndContestant";
 export * from "./VisionAndMisson";
 export * from "./VotingAndTickets";
 export * from "./GrandFinalHostCity";
+export * from "./ContactForm";
+export * from "./CompanyAddress";
