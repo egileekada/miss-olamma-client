@@ -34,7 +34,7 @@ export const CompanySection = function () {
           gift of all that the universe has bestowed upon humanity, THE WOMAN.
         </p>
       </div>
-      <VisionAndMission />
+      <VisionAndMission bg="" />
       <div style={{ marginTop: 30 }}>
         <h2
           style={{

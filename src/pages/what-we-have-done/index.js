@@ -24,7 +24,10 @@ export default function RoadToCrown() {
 
   return (
     <div>
-      <Header title="Our Story" subTitle="Rules & Prizes" />
+      <Header
+        title="What we've done"
+        subTitle="with our amazing contributors"
+      />
 
       <GallerySection />
 

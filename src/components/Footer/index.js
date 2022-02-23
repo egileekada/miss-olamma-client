@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import styles from "./Index.module.css";
 
 export const Footer = function () {
   return (
@@ -20,7 +21,7 @@ export const Footer = function () {
         </ul>
       </section>
       <ul
-        className="flex align-center flex-col"
+        className={styles.linksContainer}
         style={{ marginTop: 50, marginBottom: 42 }}
       >
         {[

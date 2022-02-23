@@ -83,3 +83,37 @@ input {
 .pointer {
   cursor: pointer;
 }
+
+.main-header {
+  font-size: 32px;
+  font-family: "Circular Std";
+  font-weight: 900;
+  text-align: center;
+}
+.sub-header {
+  font-size: 14px;
+  font-family: "Circular Std";
+  font-weight: 900;
+  margin-top: 16px;
+}
+
+.auth-nav {
+}
+
+@media only screen and (min-width: 768px) {
+  .main-header {
+    font-size: 60px;
+  }
+  .sub-header {
+    font-size: 20.54px;
+    margin-top: 20px;
+  }
+
+  .auth-nav {
+    display: none;
+  }
+
+  .container-padding {
+    padding: 0px 271px;
+  }
+}

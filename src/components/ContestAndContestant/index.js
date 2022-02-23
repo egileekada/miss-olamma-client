@@ -1,14 +1,16 @@
 import React from "react";
 
+import styles from "./Index.module.css";
+
 export const ContestAndContestant = function () {
   return (
     <section
       style={{
-        padding: "53px 30px",
         backgroundColor: "rgba(5, 7, 5, 0.8)",
       }}
+      className={styles.conts}
     >
-      <div style={{ marginBottom: 50 }}>
+      <div style={{ marginBottom: 50 }} className={styles.contest}>
         <h2
           style={{
             color: "rgba(255, 255, 255, 0.9)",
@@ -34,7 +36,7 @@ export const ContestAndContestant = function () {
           voted for through the link. The contest is in two stages.. .
         </p>
       </div>
-      <div style={{ marginBottom: 10 }}>
+      <div style={{ marginBottom: 10 }} className={styles.contestant}>
         <h2
           style={{
             color: "rgba(255, 255, 255, 0.9)",
