@@ -8,7 +8,7 @@ export const Contestants = () => {
       try {
         const data = await getData("/users");
         console.log(data);
-        setContestants(data);
+        setContestants(data.reverse());
       } catch (error) {
         console.log(error);
       }

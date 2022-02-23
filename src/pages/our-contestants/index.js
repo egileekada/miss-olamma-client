@@ -19,12 +19,7 @@ export default function RoadToCrown() {
 
   useEffect(() => {
     // router.push("road-to-crown?tab=" + activeTab, undefined, { shallow: true });
-    const socket = io("https://custom-echat.herokuapp.com");
-    console.log(socket);
-    socket.on("users", (data) => {
-      console.log(data);
-      socket.emit("con", "i'm connected");
-    });
+
     setActiveTab(router.query.tab || 0);
   }, [activeTab, router]);
   return (

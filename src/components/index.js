@@ -10,3 +10,6 @@ export * from "./Input";
 export * from "./Footer";
 export * from "./Header";
 export * from "./ContestAndContestant";
+export * from "./VisionAndMisson";
+export * from "./VotingAndTickets";
+export * from "./GrandFinalHostCity";

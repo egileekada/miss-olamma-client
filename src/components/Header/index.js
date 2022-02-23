@@ -16,7 +16,14 @@ export const Header = function ({
       }}
     >
       <div className="overlay" />
-      <div style={{ textAlign: "center", marginBottom: 103 }}>
+      <div
+        style={{
+          textAlign: "center",
+          marginBottom: 103,
+          position: "relative",
+          zIndex: 10,
+        }}
+      >
         <img src="/images/logo.svg" />
       </div>
       <div style={{ position: "relative", zIndex: 2 }}>

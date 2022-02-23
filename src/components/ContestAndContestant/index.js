@@ -34,7 +34,7 @@ export const ContestAndContestant = function () {
           voted for through the link. The contest is in two stages.. .
         </p>
       </div>
-      <div style={{ marginBottom: 105 }}>
+      <div style={{ marginBottom: 10 }}>
         <h2
           style={{
             color: "rgba(255, 255, 255, 0.9)",
