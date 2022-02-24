@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { getData } from "../../utils";
+import styles from "./Index.module.css";
 
 export const Contestants = () => {
   const [contestants, setContestants] = useState([]);
@@ -23,20 +24,22 @@ export const Contestants = () => {
       //   backgroundColor: "red",
       // }}
       style={{ backgroundColor: "rgba(5, 7, 5, 0.8)" }}
+      className={styles.container}
     >
       <div>
         {contestants.length === 0 ? (
           <p>There is nothing</p>
         ) : (
-          <ul style={{ padding: "20px" }}>
+          <ul style={{ padding: "20px" }} className={styles.contestantsWrapper}>
             {contestants.map((contestant, idx) => (
               <li
                 key={idx}
                 style={{
-                  height: 500,
+                  // height: 500,
                   marginBottom: 60,
                   overflow: "hidden",
                   borderRadius: 2,
+                  cursor: "pointer",
                 }}
               >
                 <div style={{ height: 300, overflow: "hidden" }}>
