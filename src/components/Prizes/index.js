@@ -70,8 +70,11 @@ export const Prizes = function () {
               {position.position}
             </h3>
             <ul>
-              {position.awards.map((award) => (
-                <li style={{ color: "#fff", marginBottom: 8, fontSize: 14 }}>
+              {position.awards.map((award, idx) => (
+                <li
+                  key={idx}
+                  style={{ color: "#fff", marginBottom: 8, fontSize: 14 }}
+                >
                   {award}
                 </li>
               ))}
