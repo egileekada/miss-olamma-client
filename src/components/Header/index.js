@@ -43,8 +43,8 @@ export const Header = function ({
             { menu: "Gallery", link: "/what-we-have-done" },
             { menu: "Our Story", link: "/our-story" },
             { menu: "Contact us", link: "/reach-out" },
-          ].map((menu) => (
-            <li>
+          ].map((menu, idx) => (
+            <li key={idx}>
               <Link href={`${menu.link}`}>
                 <a
                   style={{

@@ -61,6 +61,7 @@ export const Prizes = function () {
               marginBottom: idx === 2 ? 0 : 25,
               paddingTop: 34,
             }}
+            key={idx}
           >
             <h3
               className="f16 f700"
