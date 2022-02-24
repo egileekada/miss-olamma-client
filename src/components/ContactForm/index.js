@@ -1,9 +1,10 @@
 import React from "react";
 import { Button, Input } from "..";
+import styles from "./Index.module.css";
 
 export const ContactForm = function () {
   return (
-    <div>
+    <div className={styles.container}>
       <Input placeholder="First Name" title="What’s your First name?" />
       <Input placeholder="Last Name" title="What’s your last name?" />
 

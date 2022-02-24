@@ -1,5 +1,6 @@
 import React from "react";
 import { ContactForm } from "..";
+import styles from "./Index.module.css";
 
 export const GOtComplain = function () {
   return (
@@ -10,14 +11,16 @@ export const GOtComplain = function () {
         paddingBottom: 70,
       }}
     >
-      <h2 className="f20" style={{ color: "#fff", marginBottom: 10 }}>
-        Got a complain?
-      </h2>
-      <p style={{ color: "#fff", lineHeight: 1.7, marginBottom: 30 }}>
-        Emvirtue Network is made up of a team of stellar break away from the
-        norm professional young men and women who have a depth of inspired
-        imaginations, core brand strategy and innovation mechanics.
-      </p>
+      <div className={styles.container}>
+        <h2 className="f20" style={{ color: "#fff", marginBottom: 10 }}>
+          Got a complain?
+        </h2>
+        <p style={{ color: "#fff", lineHeight: 1.7, marginBottom: 30 }}>
+          Emvirtue Network is made up of a team of stellar break away from the
+          norm professional young men and women who have a depth of inspired
+          imaginations, core brand strategy and innovation mechanics.
+        </p>
+      </div>
       <ContactForm />
     </div>
   );
