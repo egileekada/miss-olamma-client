@@ -1,3 +1,5 @@
+import React from "react";
+import styles from "./Index.module.css";
 export const RolesAndPrizes = () => {
   const prizes = [
     {
@@ -37,12 +39,15 @@ export const RolesAndPrizes = () => {
   ];
 
   return (
-    <div style={{ padding: "0 30px", backgroundColor: "rgba(5, 7, 5, 0.8)" }}>
+    <div
+      style={{ backgroundColor: "rgba(5, 7, 5, 0.8)" }}
+      className={styles.container}
+    >
       <section style={{ marginBottom: 40 }}>
         <h2 className="f24 f700" style={{ color: "#fff", marginBottom: 25 }}>
           PRIZES
         </h2>
-        <ul>
+        <ul className={styles.prizesWrapper}>
           {prizes.map((sec, idx) => (
             <li key={idx} style={{ marginBottom: 20 }}>
               <h2

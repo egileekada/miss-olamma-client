@@ -1,22 +1,28 @@
 import React from "react";
+import styles from "./Index.module.css";
 
 export const Prizes = function () {
   return (
     <section
-      style={{ backgroundColor: "rgba(5, 7, 5, 0.8)", padding: "0 30px" }}
+      style={{ backgroundColor: "rgba(5, 7, 5, 0.8)" }}
+      className={styles.container}
     >
       <h2
-        className="f20 f700"
+        className={styles.heading}
         style={{ color: "rgba(255, 255, 255, 1)", fontFamily: "Circular Std" }}
       >
         Prizes
       </h2>
       <p
-        style={{ color: "rgba(238, 238, 238, 1)", fontSize: 14, marginTop: 8 }}
+        style={{ color: "rgba(238, 238, 238, 1)", marginTop: 8 }}
+        className={styles.headingSub}
       >
         Contestants are required to sell just two tickets per stage.
       </p>
-      <ul style={{ marginTop: 32, paddingBottom: 40 }}>
+      <ul
+        style={{ marginTop: 32, paddingBottom: 40 }}
+        className={styles.prizesWrapper}
+      >
         {[
           {
             position: "Winner",

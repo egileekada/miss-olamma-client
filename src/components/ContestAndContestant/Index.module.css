@@ -11,9 +11,4 @@
     justify-content: space-between;
     column-gap: 10%;
   }
-
-  .contest,
-  .contestant {
-    width: 400px;
-  }
 }

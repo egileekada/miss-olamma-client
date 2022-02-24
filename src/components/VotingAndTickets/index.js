@@ -1,22 +1,24 @@
 import React from "react";
+import styles from "./Index.module.css";
 
 export const VotingAndTickets = function () {
   return (
     <section
       style={{
-        padding: "53px 30px",
         backgroundColor: "rgba(5, 7, 5, 0.8)",
       }}
+      className={styles.container}
     >
       <div style={{ marginBottom: 50 }}>
         <h2
           style={{
             color: "rgba(255, 255, 255, 0.9)",
-            fontSize: 20,
+
             fontWeight: "700",
             fontFamily: "Circular Std",
             marginBottom: 10,
           }}
+          className={styles.heading}
         >
           Voting
         </h2>
@@ -26,6 +28,7 @@ export const VotingAndTickets = function () {
             color: "rgba(226, 226, 226, 0.9)",
             fontFamily: 14,
           }}
+          className={styles.text}
         >
           Voting is done in two ways. 50% of your votes are generated from
           online clicks while the remaining 50% is generated from ticket sales.
@@ -38,11 +41,12 @@ export const VotingAndTickets = function () {
         <h2
           style={{
             color: "rgba(255, 255, 255, 0.9)",
-            fontSize: 20,
+
             fontWeight: "700",
             fontFamily: "Circular Std",
             marginBottom: 10,
           }}
+          className={styles.heading}
         >
           Ticket Sales
         </h2>
@@ -52,6 +56,7 @@ export const VotingAndTickets = function () {
             color: "rgba(226, 226, 226, 0.9)",
             fontFamily: 14,
           }}
+          className={styles.text}
         >
           Contestants are required to sell just 1 VIP ticket of #10,000 naira
           per stage which guarantees your 50% votes This means a total of 2
@@ -65,6 +70,7 @@ export const VotingAndTickets = function () {
             fontFamily: 14,
             marginTop: 25,
           }}
+          className={styles.text}
         >
           Same process is repeated in stage 2. At stage 2, after your ticket
           sale is locked in, the winner will be determined by the amount of vote

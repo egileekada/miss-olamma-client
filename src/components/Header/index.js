@@ -20,7 +20,7 @@ export const Header = function ({
         paddingTop: 70,
         // backgroundImage:
         //   "radial-gradient(79.24% 270.81% at 35.45% 34.74%, rgba(5, 7, 5, 0.8) 0%, rgba(5, 7, 5, 0.712) 100%)",
-        height: "80vh",
+        height: "90vh",
       }}
     >
       <div className="overlay" />

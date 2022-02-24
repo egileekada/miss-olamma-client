@@ -1,23 +1,24 @@
 import React from "react";
-
+import styles from "./Index.module.css";
 export const VisionAndMission = function () {
   return (
     <div
       style={{
-        padding: "0 30px",
         backgroundColor: "rgba(5, 7, 5, 0.8)",
         paddingTop: 60,
       }}
+      className={styles.visAndMis}
     >
       <div style={{ marginBottom: 30 }}>
         <h2
           style={{
             color: "rgba(255, 255, 255, 0.9)",
-            fontSize: 20,
+
             fontWeight: "500",
             fontFamily: "Circular Std",
             marginBottom: 17.3,
           }}
+          className={styles.heading}
         >
           Our vision
         </h2>
@@ -27,6 +28,7 @@ export const VisionAndMission = function () {
             color: "rgba(226, 226, 226, 0.9)",
             fontFamily: 16,
           }}
+          className={styles.text}
         >
           We are determined to create a pan African platform that celebrates the
           African beauty through the eyes of the Igbo Woman.
@@ -36,11 +38,11 @@ export const VisionAndMission = function () {
         <h2
           style={{
             color: "rgba(255, 255, 255, 0.9)",
-            fontSize: 20,
             fontWeight: "500",
             fontFamily: "Circular Std",
             marginBottom: 17.3,
           }}
+          className={styles.heading}
         >
           Our mission
         </h2>
@@ -50,6 +52,7 @@ export const VisionAndMission = function () {
             color: "rgba(226, 226, 226, 0.9)",
             fontFamily: 16,
           }}
+          className={styles.text}
         >
           To design an annual contest that allows Igbo African Women to express
           themselves through pageantry.

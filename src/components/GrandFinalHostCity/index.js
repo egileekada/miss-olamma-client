@@ -1,32 +1,36 @@
 import React from "react";
+import styles from "./Index.module.css";
 
 export const GrandFinalHostCity = function () {
   return (
     <div
-      style={{ backgroundColor: "rgba(5, 7, 5, 0.8)", padding: "10px 30px" }}
+      style={{ backgroundColor: "rgba(5, 7, 5, 0.8)" }}
+      className={styles.container}
     >
       <h3
         style={{
           textAlign: "center",
           color: "#fff",
-          fontSize: 20,
+
           fontFamily: "Circular Std",
           fontWeight: "700",
           marginBottom: 18,
           paddingTop: 40,
         }}
+        className={styles.heading}
       >
         Grand Finale Host City
       </h3>
       <p
         style={{
           textAlign: "center",
-          fontSize: 14,
+
           fontFamily: "Circular Std",
           lineHeight: 1.8,
           color: "#fff",
           paddingBottom: 60,
         }}
+        className={styles.text}
       >
         Enugu is called the ‘Coal City’ State. This is because of the
         extraordinarily large and untapped deposit of coal in the belle of its
