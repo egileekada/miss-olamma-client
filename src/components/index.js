@@ -15,3 +15,5 @@ export * from "./VotingAndTickets";
 export * from "./GrandFinalHostCity";
 export * from "./ContactForm";
 export * from "./CompanyAddress";
+export * from "./Global";
+export * from "./Navbar";
