@@ -6,7 +6,7 @@ export const GOtComplain = function () {
   return (
     <div
       style={{
-        backgroundColor: "rgba(5, 7, 5, 0.8) ",
+        backgroundColor: "#060806",
         padding: "30px",
         paddingBottom: 70,
       }}

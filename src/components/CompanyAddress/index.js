@@ -2,7 +2,7 @@ import React from "react";
 
 export const CompanyAddress = function () {
   return (
-    <div style={{ padding: 30, backgroundColor: "rgba(5, 7, 5, 0.8) " }}>
+    <div style={{ padding: 30, backgroundColor: "#060806" }}>
       <div style={{ marginBottom: 24 }}>
         <h3
           style={{

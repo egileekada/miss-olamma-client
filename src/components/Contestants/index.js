@@ -23,12 +23,12 @@ export const Contestants = () => {
       //   justifyContent: "center",
       //   backgroundColor: "red",
       // }}
-      style={{ backgroundColor: "rgba(5, 7, 5, 0.8)" }}
+      style={{ backgroundColor: "#060806" }}
       className={styles.container}
     >
       <div>
         {contestants.length === 0 ? (
-          <p>There is nothing</p>
+          <p style={{color: 'white'}} >No Contestants Avaliable</p>
         ) : (
           <ul style={{ padding: "20px" }} className={styles.contestantsWrapper}>
             {contestants.map((contestant, idx) => (

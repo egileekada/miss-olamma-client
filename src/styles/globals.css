@@ -62,7 +62,7 @@ ul {
 }
 
 .hero-image {
-  background-image: url("../../public/images/hero.svg");
+  background-image: url("../../public/images/hero2.png");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -100,8 +100,8 @@ input {
   margin-top: 16px;
 }
 
-.auth-nav {
-}
+/* .auth-nav {
+} */
 
 @media only screen and (min-width: 768px) {
   .main-header {
@@ -113,7 +113,9 @@ input {
   }
 
   .auth-nav {
-    display: none;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .container-padding {
